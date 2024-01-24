@@ -154,7 +154,7 @@
                     .then(response => response.json())
                     .then(activityData => {
                         // Display the random activity with the selected emoji on the webpage
-                        document.getElementById('randomActivity').innerText = `Your random activity shall be: ${activityData.activity} in ${randomCategory} with the cute${randomEmoji.character}!`;
+                        document.getElementById('randomActivity').innerText = `Your random activity shall be: \n ${activityData.activity} in ${randomCategory} with the cute${randomEmoji.character}!`;
                     })
                     .catch(error => {
                         console.error('Error fetching random activity:', error);
